@@ -120,7 +120,6 @@ def write_job_post_record():
     with open('jobPostRecord.txt', 'w', encoding='utf-8') as f:
         while True:
             if q.empty():
-                print(222)
                 break
             f.write(q.get())
 
